@@ -1,3 +1,50 @@
+/* Start Variables */
+/* End Variables */
+/* Start Global Rules */
+body {
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Start Components */
+/* End Components */
+/* Start Header */
+header {
+  background-color: #252636;
+  min-width: 72px;
+}
+header .navbar-toggler {
+  border-color: white;
+  color: white;
+}
+header .navbar-toggler:focus {
+  box-shadow: none;
+  border-color: #252636;
+}
+header .nav-link {
+  color: rgba(255, 255, 255, 0.72);
+  text-transform: capitalize;
+  border-bottom: 3px solid transparent;
+  padding: 10px 15px !important;
+  font-size: 18px;
+}
+header .nav-link:hover, header .nav-link.active, header .nav-link:focus {
+  color: white !important;
+  border-bottom-color: #f6c606;
+}
+header .search {
+  border-left: 2px solid #252636;
+}
+header .search svg {
+  color: #252636;
+  cursor: pointer;
+}
+
+/* End Header */
 footer {
   position: fixed;
   bottom: 0;

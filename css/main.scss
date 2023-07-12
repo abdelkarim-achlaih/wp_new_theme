@@ -1,3 +1,55 @@
+/* Start Variables */
+
+$main: #f6c606;
+$second: #252636;
+$duration: 0.4s;
+
+/* End Variables */
+/* Start Global Rules */
+body {
+	font-family: "Ysabeau Office", sans-serif;
+}
+section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+/* Start Components */
+
+/* End Components */
+/* Start Header */
+header {
+	background-color: $second;
+	min-width: 72px;
+	.navbar-toggler {
+		border-color: white;
+		color: white;
+		&:focus {
+			box-shadow: none;
+			border-color: $second;
+		}
+	}
+	.nav-link {
+		color: rgba(255, 255, 255, 0.72);
+		text-transform: capitalize;
+		border-bottom: 3px solid transparent;
+		padding: 10px 15px !important;
+		font-size: 18px;
+		&:hover,
+		&.active,
+		&:focus {
+			color: white !important;
+			border-bottom-color: $main;
+		}
+	}
+	.search {
+		border-left: 2px solid $second;
+		svg {
+			color: $second;
+			cursor: pointer;
+		}
+	}
+}
+/* End Header */
 footer {
 	position: fixed;
 	bottom: 0;
