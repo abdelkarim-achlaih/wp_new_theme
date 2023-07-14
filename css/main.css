@@ -10,7 +10,17 @@ section {
   padding-bottom: 60px;
 }
 
+/* End Global Rules */
 /* Start Components */
+.btn {
+  background-color: #f6c606;
+  color: #252636;
+}
+.btn:hover {
+  background-color: #252636;
+  color: #f6c606;
+}
+
 /* End Components */
 /* Start Header */
 header {
@@ -45,8 +55,37 @@ header .search svg {
 }
 
 /* End Header */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}/*# sourceMappingURL=main.css.map */
+/* Start Blogs Section */
+.blogs .card {
+  transition: 0.4s;
+}
+.blogs .card:hover {
+  transform: translateY(-5px);
+}
+.blogs .card .card-infos {
+  font-size: 13px;
+  padding: 20px 17px 0 17px;
+}
+.blogs .card .card-infos span {
+  margin-right: 7px;
+}
+.blogs .card .card-infos span svg {
+  color: #f6c606;
+  margin-right: 3px;
+}
+.blogs .card .card-body p {
+  color: #252636;
+}
+.blogs .card .m-card-footer span svg {
+  color: #f6c606;
+  margin-right: 5px;
+}
+.blogs .card .m-card-footer span a {
+  text-decoration: none;
+  color: #252636;
+}
+.blogs .card .m-card-footer span a:hover {
+  color: #f6c606;
+}
+
+/* End Blogs Section *//*# sourceMappingURL=main.css.map */

@@ -75,3 +75,22 @@ add_action('wp_enqueue_scripts', 'add_styles');
 add_action('wp_enqueue_scripts', 'add_scripts');
 
 /* End enqueing Styles and Scripts */
+
+/* Start Enabling Posts Thumbnails */
+
+add_theme_support("post-thumbnails"); 
+
+/* End Enabling Posts Thumbnails */
+
+/* Start Excerpt Filters */
+
+function extend_excerpt_length ($length) {
+    return 30;
+}
+function extend_excerpt_more ($length) {
+    return "...";
+}
+add_filter('excerpt_length', 'extend_excerpt_length');
+add_filter('excerpt_more', 'extend_excerpt_more');
+
+/* End Excerpt Filters */

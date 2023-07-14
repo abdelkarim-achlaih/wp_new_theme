@@ -9,31 +9,47 @@ $duration: 0.4s;
 body {
 	font-family: "Ysabeau Office", sans-serif;
 }
+
 section {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
+/* End Global Rules */
 /* Start Components */
+.btn {
+	background-color: $main;
+	color: $second;
+
+	&:hover {
+		background-color: $second;
+		color: $main;
+	}
+}
 
 /* End Components */
 /* Start Header */
 header {
 	background-color: $second;
 	min-width: 72px;
+
 	.navbar-toggler {
 		border-color: white;
 		color: white;
+
 		&:focus {
 			box-shadow: none;
 			border-color: $second;
 		}
 	}
+
 	.nav-link {
 		color: rgba(255, 255, 255, 0.72);
 		text-transform: capitalize;
 		border-bottom: 3px solid transparent;
 		padding: 10px 15px !important;
 		font-size: 18px;
+
 		&:hover,
 		&.active,
 		&:focus {
@@ -41,17 +57,66 @@ header {
 			border-bottom-color: $main;
 		}
 	}
+
 	.search {
 		border-left: 2px solid $second;
+
 		svg {
 			color: $second;
 			cursor: pointer;
 		}
 	}
 }
+
 /* End Header */
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
+/* Start Blogs Section */
+.blogs {
+	.card {
+		transition: $duration;
+
+		&:hover {
+			transform: translateY(-5px);
+		}
+
+		.card-infos {
+			font-size: 13px;
+			padding: 20px 17px 0 17px;
+
+			span {
+				margin-right: 7px;
+
+				svg {
+					color: $main;
+					margin-right: 3px;
+				}
+			}
+		}
+
+		.card-body {
+			p {
+				color: $second;
+			}
+		}
+
+		.m-card-footer {
+			span {
+				svg {
+					color: $main;
+					margin-right: 5px;
+				}
+
+				a {
+					text-decoration: none;
+					color: $second;
+
+					&:hover {
+						color: $main;
+					}
+				}
+			}
+		}
+	}
 }
+
+/* End Blogs Section */
+footer {}
