@@ -20,7 +20,7 @@
                     <h5 class="card-title fs-3 fw-bold"><?php the_title(); ?></h5>
                     <p class="card-text fs-6 lh-sm"><?php the_excerpt(); ?></p>
                     <div class="m-card-footer d-flex justify-content-between align-items-center">
-                      <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more...</a>
+                      <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
                       <span class="text-end"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
                     </div>
                   </div>
@@ -28,6 +28,24 @@
               </div>
             <?php
           }
+        }
+      ?>
+    </div>
+    <div class="pagination pt-4 pb-5 d-flex justify-content-evenly">
+      <?php
+        if (get_previous_posts_link()) {
+          previous_posts_link('« Prev Page');
+        } else {
+          ?>
+            <span class="btn rounded-pill">« Prev Page</span>
+          <?php
+        }
+        if (get_next_posts_link()) {
+          next_posts_link();
+        } else {
+          ?>
+            <span class="btn rounded-pill">Next Page »</span>
+          <?php
         }
       ?>
     </div>
