@@ -176,6 +176,16 @@ header {
 				margin-right: 10px;
 			}
 		}
+
+		.post-category {
+			a {
+				color: $second;
+
+				&:hover {
+					color: $main;
+				}
+			}
+		}
 	}
 
 	.card {

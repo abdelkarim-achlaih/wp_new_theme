@@ -134,6 +134,12 @@ header .search svg {
   color: #f6c606;
   margin-right: 10px;
 }
+.blog-post .blog-post-data .post-category a {
+  color: #252636;
+}
+.blog-post .blog-post-data .post-category a:hover {
+  color: #f6c606;
+}
 .blog-post .card {
   border-color: #f6c606 !important;
 }

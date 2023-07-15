@@ -3,7 +3,7 @@
 <section class="blog-post">
   <div class="container">
     <div class="row">
-      <div class="col-lg-9 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3 bg-white mb-5">
+      <div class="col-lg-9 ps-sm-0 pe-sm-0 bg-white mb-5">
         <div class="blog-post-item">
           <?php
             if (have_posts()) {
@@ -23,12 +23,10 @@
                   <div class="blog-post-data d-flex justify-content-evenly mb-5">
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
                     <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
-                    <span class="text-end"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
+                    <span class="post-category"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
                   </div>
-                  <div class="blog-post-content">
-                    <p class="text-black-70 lh-lg p-sm-5">
-                      <?php the_content(); ?>
-                    </p>
+                  <div class="blog-post-content text-black-70 lh-lg ps-sm-5 pe-sm-5">
+                    <?php the_content(); ?>
                   </div>
                   <?php
                 }
@@ -59,23 +57,22 @@
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
         <div class="card">
           <div class="card-header">
-            <h3 class="fw-bold"><?php the_author(); ?></h3>
+            <h3 class="fw-bold">More Articles</h3>
           </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold"><?php the_title(); ?></h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
-            <a href="#" class="btn rounded-pill">Read more</a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
-            <a href="#" class="btn rounded-pill">Read more</a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
-            <a href="#" class="btn rounded-pill">Read more</a>
-          </div>
+          <?php
+            if (have_posts()) {
+              while (have_posts()) {
+                the_post();
+                ?>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold"><?php the_title(); ?></h5>
+                    <p class="card-text"><?php the_excerpt(); ?></p>
+                    <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
+                  </div>
+                  <?php
+                }
+              }
+            ?>
         </div>
       </div>
     </div>
