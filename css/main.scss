@@ -145,4 +145,56 @@ header {
 }
 
 /* End Blogs Section */
-footer {}
+/* Start Blog Post Section */
+.blog-post {
+	background-color: #f6f6f8;
+
+	.blog-post-author {
+		position: relative;
+
+		img {
+			width: 150px;
+			border: 10px solid white;
+			top: -30px;
+			position: relative;
+		}
+
+		span {
+			margin-top: -20px;
+			display: block;
+		}
+	}
+
+	.blog-post-data {
+		span {
+			font-size: 17px;
+
+			svg {
+				color: $main;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.card {
+		border-color: $main !important;
+
+		.card-header {
+			color: $main;
+			border-color: $main !important;
+			background-color: $second;
+		}
+
+		.card-body {
+			&:not(:last-of-type) {
+				border-bottom: 1px solid $main;
+			}
+
+			.card-title {
+				color: $second;
+			}
+		}
+	}
+}
+
+/* End Blog Post Section */
