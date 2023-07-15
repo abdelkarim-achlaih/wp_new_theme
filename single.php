@@ -35,17 +35,34 @@
               }
             ?>
         </div>
+        <div class="pagination pt-4 pb-5 d-flex justify-content-evenly">
+          <?php
+            if (get_previous_post_link()) {
+              previous_post_link('%link', '« Prev Article');
+            } else {
+              ?>
+                <span class="btn rounded-pill">« Prev Article</span>
+              <?php
+            }
+            if (get_next_post_link()) {
+              next_post_link('%link', 'Next Article »');
+            } else {
+              ?>
+                <span class="btn rounded-pill">Next Article »</span>
+              <?php
+            }
+          ?>
+    </div>
       </div>
-
 
 
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
         <div class="card">
           <div class="card-header">
-            <h3 class="fw-bold">Recent Blogs</h3>
+            <h3 class="fw-bold"><?php the_author(); ?></h3>
           </div>
           <div class="card-body">
-            <h5 class="card-title fw-bold">Special title treatment</h5>
+            <h5 class="card-title fw-bold"><?php the_title(); ?></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
             <a href="#" class="btn rounded-pill">Read more</a>
           </div>
