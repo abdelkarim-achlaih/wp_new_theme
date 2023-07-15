@@ -210,3 +210,19 @@ header {
 }
 
 /* End Blog Post Section */
+/* Start Comments Section */
+.comments {
+	.comment {
+		border-bottom: 1px solid $main;
+
+		img {
+			width: 55px;
+		}
+
+		h4 {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* End Comments Section */

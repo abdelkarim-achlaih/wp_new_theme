@@ -155,4 +155,16 @@ header .search svg {
   color: #252636;
 }
 
-/* End Blog Post Section *//*# sourceMappingURL=main.css.map */
+/* End Blog Post Section */
+/* Start Comments Section */
+.comments .comment {
+  border-bottom: 1px solid #f6c606;
+}
+.comments .comment img {
+  width: 55px;
+}
+.comments .comment h4 {
+  margin-bottom: 0;
+}
+
+/* End Comments Section *//*# sourceMappingURL=main.css.map */

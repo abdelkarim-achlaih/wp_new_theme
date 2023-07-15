@@ -3,7 +3,7 @@
 <section class="blog-post">
   <div class="container">
     <div class="row">
-      <div class="col-lg-9 ps-sm-0 pe-sm-0 bg-white mb-5">
+      <div class="col-lg-9 ps-sm-0 pe-sm-0 bg-white mb-5 rounded">
         <div class="blog-post-item">
           <?php
             if (have_posts()) {
@@ -25,7 +25,7 @@
                     <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
                     <span class="post-category"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
                   </div>
-                  <div class="blog-post-content text-black-70 lh-lg ps-sm-5 pe-sm-5">
+                  <div class="blog-post-content text-black-70 lh-lg ps-sm-5 pe-sm-5 fs-5">
                     <?php the_content(); ?>
                   </div>
                   <?php
@@ -50,7 +50,27 @@
               <?php
             }
           ?>
-    </div>
+        </div>
+        <div class="comments p-5">
+          <h3 class="fw-bold fs-3">Comments</h3>
+          <p class="text-balck-75">75 Réponses</p>
+          <div class="comment mb-5">
+            <div class="comment-data">
+              <div class="row text-center text-md-start">
+                <div class="col-md-1 mb-lg-auto mb-3">
+                  <img src="imgs/avatar.png" alt="Comment Author" class="">
+                </div>
+                <div class="col-md-10 ps-md-5">
+                  <h4 class="fw-bold">Abdelkarim</h4>
+                  <p class="text-black-50">September 25, 2018 at 7:57 AM</p>
+                </div>
+              </div>
+              <div class="comment-content fs-5 mb-2 text-center text-md-start">
+                You are very big kings in the page builders market! Perfect post templates, thank you!
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
