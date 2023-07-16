@@ -51,12 +51,34 @@
             }
           ?>
         </div>
-        <div class="comments p-5">
+        <div class="comments p-sm-5">
           <h3 class="fw-bold fs-3">Comments</h3>
           <p class="text-balck-75"><?php comments_number() ?></p>
           <?php comments_template() ?>
         </div>
+
+
+        <div class="comment mb-5">
+          <div class="comment-data">
+            <div class="row text-center text-md-start">
+              <div class="col-md-1 mb-lg-auto mb-3">
+                <img src="imgs/avatar.png" alt="Comment Author" class="">
+              </div>
+              <div class="col-md-10 ps-md-5">
+                <h4 class="fw-bold">Abdelkarim</h4>
+                <p class="text-black-50">September 25, 2018 at 7:57 AM</p>
+              </div>
+            </div>
+
+
+            <div class="comment-content fs-5 mb-2 text-center text-md-start">
+              You are very big kings in the page builders market! Perfect post templates, thank you!
+            </div>
+          </div>
+        </div>
       </div>
+
+      
 
 
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">

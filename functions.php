@@ -94,3 +94,73 @@ add_filter('excerpt_length', 'extend_excerpt_length');
 add_filter('excerpt_more', 'extend_excerpt_more');
 
 /* End Excerpt Filters */
+
+function mytheme_comment($comment, $args, $depth) {
+    if ( 'div' === $args['style'] ) {
+        $tag       = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag       = 'li';
+        $add_below = 'div-comment';
+    }
+    ?>
+    <<?php echo $tag; ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID() ?>">
+        <?php 
+            if ( 'div' != $args['style'] ) {
+                ?>
+                    <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+                <?php
+            } 
+        ?>
+        <div class="row text-center text-md-start">
+            <div class="col-md-1 mb-lg-auto mb-3">
+                <?php 
+                    if ( $args['avatar_size'] != 0 ) {
+                        echo get_avatar( $comment, $args['avatar_size'] );
+                    }
+                ?>
+            </div>
+            <div class="col-md-10 ps-md-5">
+                <h4 class="fw-bold"><?php echo get_comment_author_link()?></h4>
+                <p class="text-black-50">
+                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+                        <?php
+                            /* translators: 1: date, 2: time */
+                            printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time());
+                        ?>
+                    </a>
+                    <?php
+                        edit_comment_link( __( '<i class="fa-solid fa-pen"></i> Edit' ), '  ', '' );
+                    ?>
+                </p>
+            </div>
+            <?php 
+                if ( $comment->comment_approved == '0' ) { ?>
+                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+                }
+            ?>
+        </div>
+        <div class="comment-content fs-5 mb-2 text-center text-md-start">
+            <?php comment_text(); ?>
+        </div>
+        <div class="reply">
+            <?php
+                comment_reply_link( 
+                    array_merge( 
+                        $args, 
+                        array( 
+                            'reply_text' => __('<i class="fa-solid fa-comments"></i> Reply'),
+                            'add_below' => $add_below, 
+                            'depth'     => $depth, 
+                            'max_depth' => $args['max_depth'] 
+                        ) 
+                    ) 
+                ); ?>
+        </div>
+        <?php 
+    if ( 'div' != $args['style'] ) :
+    ?>
+    </div>
+    <?php 
+    endif;
+}
