@@ -162,6 +162,7 @@ header .search svg {
 }
 .comments .comment img {
   width: 55px;
+  border-radius: 50%;
 }
 .comments .comment h4 {
   margin-bottom: 0;
