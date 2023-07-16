@@ -122,6 +122,7 @@ header .search svg {
   border: 10px solid white;
   top: -30px;
   position: relative;
+  border-radius: 50%;
 }
 .blog-post .blog-post-author span {
   margin-top: -20px;

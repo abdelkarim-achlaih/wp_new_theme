@@ -14,7 +14,7 @@
                     <?php the_post_thumbnail('', ['class' => 'img-fluid rounded', 'alt' => 'Blog-post-img']); ?>
                   </div>
                   <div class="blog-post-author text-center">
-                    <img src="imgs/avatar.png" alt="avatar" class="img-fluid rounded-circle">
+                    <?php echo get_avatar($post, 150) ?>
                     <span class="fs-4"></i><?php the_author(); ?></span>
                   </div>
                   <div class="blog-post-title d-flex justify-content-center">
