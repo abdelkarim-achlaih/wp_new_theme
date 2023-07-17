@@ -168,6 +168,16 @@ header .search svg {
   max-width: 100% !important;
   border-radius: 45% 75%;
 }
+.blog-post .author .author-stats svg {
+  margin-right: 10px;
+}
+.blog-post .author .author-stats a {
+  color: #252636;
+  transition: 0.4s;
+}
+.blog-post .author .author-stats a:hover {
+  color: white;
+}
 
 /* End Blog Post Section */
 /* Start Comments Section */

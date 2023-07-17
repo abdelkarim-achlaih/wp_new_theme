@@ -223,6 +223,21 @@ header {
 			max-width: 100% !important;
 			border-radius: 45% 75%;
 		}
+
+		.author-stats {
+			svg {
+				margin-right: 10px;
+			}
+
+			a {
+				color: $second;
+				transition: $duration;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
 	}
 }
 

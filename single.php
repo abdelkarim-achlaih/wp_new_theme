@@ -55,7 +55,17 @@
           <h3 class="fw-bold fs-3 mb-5">About the Author</h3>
           <div class="row align-items-center">
             <div class="col-md-3 mb-3">
-              <?php echo get_avatar($post, 180) ?>
+              <?php echo get_avatar(get_the_author_meta('ID'), 180) ?>
+              <p class="author-stats row text-center fs-5 mt-3 lh-lg">
+                <span>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <?php echo count_user_posts(get_the_author_meta('ID'));?> Blogs
+                </span>
+                <span>
+                  <i class="fa-solid fa-user"></i>
+                  <?php the_author_posts_link();?>
+                </span>
+              </p>
             </div>
             <div class="col-md-9">
               <h5 class="card-title fw-bold mb-3 fs-2"><?php the_author_meta('nickname');?></h5>
