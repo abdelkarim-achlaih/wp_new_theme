@@ -51,6 +51,18 @@
             }
           ?>
         </div>
+        <div class="author mb-5 p-sm-5 pt-5 pb-5 text-center text-md-start">
+          <h3 class="fw-bold fs-3 mb-5">About the Author</h3>
+          <div class="row align-items-center">
+            <div class="col-md-3 mb-3">
+              <?php echo get_avatar($post, 180) ?>
+            </div>
+            <div class="col-md-9">
+              <h5 class="card-title fw-bold mb-3 fs-2"><?php the_author_meta('nickname');?></h5>
+              <p class="card-text text-center text-md-start lh-lg fs-5 text-black-75"><?php the_author_meta('description'); ?></p>
+            </div>
+          </div>
+        </div>
         <div class="comments p-sm-5">
           <h3 class="fw-bold fs-3 text-center text-md-start">Comments</h3>
           <p class="text-balck-75 text-center text-md-start"><?php comments_number() ?></p>
@@ -58,6 +70,16 @@
         </div>
       </div>
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
+        <div class="card mb-5 d-none d-lg-block">
+          <div class="card-header">
+            <h3 class="fw-bold">About the Author</h3>
+          </div>
+          <div class="card-body text-center">
+            <?php echo get_avatar($post, 180) ?>
+            <h5 class="card-title fw-bold mt-3"><?php the_author_meta('nickname');?></h5>
+            <p class="card-text text-center text-md-start"><?php the_author_meta('description'); ?></p>
+          </div>
+        </div>
         <div class="card">
           <div class="card-header">
             <h3 class="fw-bold">More Articles</h3>

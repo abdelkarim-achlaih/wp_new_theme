@@ -202,6 +202,10 @@ header {
 		}
 
 		.card-body {
+			img {
+				border-radius: 45% 75%;
+			}
+
 			&:not(:last-of-type) {
 				border-bottom: 1px solid $main;
 			}
@@ -209,6 +213,15 @@ header {
 			.card-title {
 				color: $second;
 			}
+		}
+	}
+
+	.author {
+		background-color: $main;
+
+		img {
+			max-width: 100% !important;
+			border-radius: 45% 75%;
 		}
 	}
 }
@@ -221,9 +234,6 @@ header {
 			border-left: 1px solid $main;
 			padding-left: 20px;
 			margin-bottom: 30px;
-
-			.comment-edit-link,
-
 
 			&>.row {
 
@@ -280,6 +290,7 @@ header {
 		margin-left: 20px;
 	}
 
+	.comment-edit-link,
 	.reply a,
 	.discard a {
 		background-color: $main;

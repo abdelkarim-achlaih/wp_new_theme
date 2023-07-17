@@ -152,11 +152,21 @@ header .search svg {
   border-color: #f6c606 !important;
   background-color: #252636;
 }
+.blog-post .card .card-body img {
+  border-radius: 45% 75%;
+}
 .blog-post .card .card-body:not(:last-of-type) {
   border-bottom: 1px solid #f6c606;
 }
 .blog-post .card .card-body .card-title {
   color: #252636;
+}
+.blog-post .author {
+  background-color: #f6c606;
+}
+.blog-post .author img {
+  max-width: 100% !important;
+  border-radius: 45% 75%;
 }
 
 /* End Blog Post Section */
@@ -166,23 +176,21 @@ header .search svg {
   padding-left: 20px;
   margin-bottom: 30px;
 }
-.comments .comments-holder .comment .comment-edit-link img, .comments .comments-holder .comment > .row img {
+.comments .comments-holder .comment > .row img {
   width: 55px;
   border-radius: 50%;
 }
-.comments .comments-holder .comment .comment-edit-link h4 a,
-.comments .comments-holder .comment .comment-edit-link p a, .comments .comments-holder .comment > .row h4 a,
+.comments .comments-holder .comment > .row h4 a,
 .comments .comments-holder .comment > .row p a {
   text-decoration: none;
   color: #252636;
   transition: 0.4s;
 }
-.comments .comments-holder .comment .comment-edit-link h4 a:hover,
-.comments .comments-holder .comment .comment-edit-link p a:hover, .comments .comments-holder .comment > .row h4 a:hover,
+.comments .comments-holder .comment > .row h4 a:hover,
 .comments .comments-holder .comment > .row p a:hover {
   color: #f6c606;
 }
-.comments .comments-holder .comment .comment-edit-link .says, .comments .comments-holder .comment > .row .says {
+.comments .comments-holder .comment > .row .says {
   display: none;
 }
 .comments .comments-holder .comment .awaiting {
@@ -205,6 +213,7 @@ header .search svg {
   font-size: 13px;
   margin-left: 20px;
 }
+.comments .comment-edit-link,
 .comments .reply a,
 .comments .discard a {
   background-color: #f6c606;
@@ -215,6 +224,7 @@ header .search svg {
   border-radius: 50rem;
   text-decoration: none;
 }
+.comments .comment-edit-link:hover,
 .comments .reply a:hover,
 .comments .discard a:hover {
   background-color: #252636;
