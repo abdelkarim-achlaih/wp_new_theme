@@ -194,6 +194,10 @@ header .search svg {
 .comments .comments-holder .comment > .row .says {
   display: none;
 }
+.comments .comments-holder .comment .awaiting {
+  color: #f6c606;
+  font-style: italic;
+}
 .comments .comments-holder .comment > .reply {
   margin-bottom: 25px;
 }
@@ -205,6 +209,30 @@ header .search svg {
 }
 .comments .comments-holder .comment > .comment > .comment {
   margin-bottom: 20px;
+}
+.comments .comment-respond input,
+.comments .comment-respond textarea {
+  border-color: #252636;
+}
+.comments .comment-respond input:focus,
+.comments .comment-respond textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.comments .comment-respond .form-check-input:checked {
+  background-color: #f6c606;
+}
+.comments .comment-respond .logged-in-as {
+  font-style: italic;
+}
+.comments .comment-respond .logged-in-as a {
+  color: #f6c606;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.comments .comment-respond .logged-in-as a:hover {
+  color: #252636;
+  text-decoration: underline;
 }
 
 /* End Comments Section *//*# sourceMappingURL=main.css.map */

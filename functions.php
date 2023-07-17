@@ -136,7 +136,11 @@ function mytheme_comment($comment, $args, $depth) {
             </div>
             <?php 
                 if ( $comment->comment_approved == '0' ) { ?>
-                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+                    <p class="awaiting">
+                        <?php 
+                            _e( 'Your comment is awaiting moderation.' ); 
+                        ?>
+                    </p><br/><?php 
                 }
             ?>
         </div>

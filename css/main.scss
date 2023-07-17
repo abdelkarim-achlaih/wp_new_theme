@@ -260,6 +260,12 @@ header {
 				}
 			}
 
+			.awaiting {
+				color: $main;
+				font-style: italic;
+
+			}
+
 			&>.reply {
 				margin-bottom: 25px;
 			}
@@ -273,6 +279,38 @@ header {
 
 				&>.comment {
 					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	.comment-respond {
+
+		input,
+		textarea {
+			border-color: $second;
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+
+		.form-check-input:checked {
+			background-color: $main;
+		}
+
+		.logged-in-as {
+			font-style: italic;
+
+			a {
+				color: $main;
+				text-decoration: none;
+				transition: $duration;
+
+				&:hover {
+					color: $second;
+					text-decoration: underline;
 				}
 			}
 		}
