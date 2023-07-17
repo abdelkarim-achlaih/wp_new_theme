@@ -52,8 +52,8 @@
           ?>
         </div>
         <div class="comments p-sm-5">
-          <h3 class="fw-bold fs-3">Comments</h3>
-          <p class="text-balck-75"><?php comments_number() ?></p>
+          <h3 class="fw-bold fs-3 text-center text-md-start">Comments</h3>
+          <p class="text-balck-75 text-center text-md-start"><?php comments_number() ?></p>
           <?php comments_template() ?>
         </div>
       </div>

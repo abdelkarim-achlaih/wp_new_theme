@@ -166,36 +166,23 @@ header .search svg {
   padding-left: 20px;
   margin-bottom: 30px;
 }
-.comments .comments-holder .comment .comment-edit-link,
-.comments .comments-holder .comment .reply a {
-  background-color: #f6c606;
-  color: #252636;
-  transition: 0.4s;
-  border: 1px solid #252636;
-  padding: 5px 10px;
-  border-radius: 50rem;
-  text-decoration: none;
-}
-.comments .comments-holder .comment .comment-edit-link:hover,
-.comments .comments-holder .comment .reply a:hover {
-  background-color: #252636;
-  color: #f6c606;
-}
-.comments .comments-holder .comment > .row img {
+.comments .comments-holder .comment .comment-edit-link img, .comments .comments-holder .comment > .row img {
   width: 55px;
   border-radius: 50%;
 }
-.comments .comments-holder .comment > .row h4 a,
+.comments .comments-holder .comment .comment-edit-link h4 a,
+.comments .comments-holder .comment .comment-edit-link p a, .comments .comments-holder .comment > .row h4 a,
 .comments .comments-holder .comment > .row p a {
   text-decoration: none;
   color: #252636;
   transition: 0.4s;
 }
-.comments .comments-holder .comment > .row h4 a:hover,
+.comments .comments-holder .comment .comment-edit-link h4 a:hover,
+.comments .comments-holder .comment .comment-edit-link p a:hover, .comments .comments-holder .comment > .row h4 a:hover,
 .comments .comments-holder .comment > .row p a:hover {
   color: #f6c606;
 }
-.comments .comments-holder .comment > .row .says {
+.comments .comments-holder .comment .comment-edit-link .says, .comments .comments-holder .comment > .row .says {
   display: none;
 }
 .comments .comments-holder .comment .awaiting {
@@ -213,6 +200,25 @@ header .search svg {
 }
 .comments .comments-holder .comment > .comment > .comment {
   margin-bottom: 20px;
+}
+.comments .discard {
+  font-size: 13px;
+  margin-left: 20px;
+}
+.comments .reply a,
+.comments .discard a {
+  background-color: #f6c606;
+  color: #252636;
+  transition: 0.4s;
+  border: 1px solid #252636;
+  padding: 5px 10px;
+  border-radius: 50rem;
+  text-decoration: none;
+}
+.comments .reply a:hover,
+.comments .discard a:hover {
+  background-color: #252636;
+  color: #f6c606;
 }
 .comments .comment-respond input,
 .comments .comment-respond textarea {

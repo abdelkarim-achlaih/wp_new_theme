@@ -223,20 +223,7 @@ header {
 			margin-bottom: 30px;
 
 			.comment-edit-link,
-			.reply a {
-				background-color: $main;
-				color: $second;
-				transition: $duration;
-				border: 1px solid $second;
-				padding: 5px 10px;
-				border-radius: 50rem;
-				text-decoration: none;
 
-				&:hover {
-					background-color: $second;
-					color: $main;
-				}
-			}
 
 			&>.row {
 
@@ -285,6 +272,27 @@ header {
 					margin-bottom: 20px;
 				}
 			}
+		}
+	}
+
+	.discard {
+		font-size: 13px;
+		margin-left: 20px;
+	}
+
+	.reply a,
+	.discard a {
+		background-color: $main;
+		color: $second;
+		transition: $duration;
+		border: 1px solid $second;
+		padding: 5px 10px;
+		border-radius: 50rem;
+		text-decoration: none;
+
+		&:hover {
+			background-color: $second;
+			color: $main;
 		}
 	}
 
