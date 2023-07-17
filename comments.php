@@ -22,8 +22,7 @@ if (comments_open()) {
       'url' => '<label for="url" class="form-label">Website</label><input type="url" class="form-control mb-4" id="url" name="url" autocomplete="url" value="'.$commenter['comment_author_url'].'">',
       'cookies' => '<input class="form-check-input mb-4 me-3" id="check" name="wp-comment-cookies-consent" type="checkbox" value="yes" checked="checked""><label class="form-check-label" for="check">Save my name, email, and website in this browser for the next time I comment.</label>'
     ),
-    'comment_field' => '<label for="comment" class="form-label">Comment</label>
-  <textarea class="form-control mb-4" id="comment" rows="3" name="comment"></textarea>',
+    'comment_field' => '<label for="comment" class="form-label">Comment</label><textarea class="form-control mb-4" id="comment" rows="3" name="comment"></textarea>',
     'title_reply_before' => '<h3 class="fw-bold fs-3">',
     'title_reply' => 'Submit A New Comment',
     'title_reply_after' => '</h3>',
@@ -32,6 +31,4 @@ if (comments_open()) {
     'submit_button' => '<input name="%1$s" type="submit" id="%2$s" class="%3$s btn rounded-pill" value="%4$s" />'
   );
   comment_form($comments_form_args);
-} else {
-
 }

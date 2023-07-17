@@ -55,16 +55,8 @@
           <h3 class="fw-bold fs-3">Comments</h3>
           <p class="text-balck-75"><?php comments_number() ?></p>
           <?php comments_template() ?>
-          
         </div>
-
-
-        
       </div>
-
-      
-
-
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
         <div class="card">
           <div class="card-header">

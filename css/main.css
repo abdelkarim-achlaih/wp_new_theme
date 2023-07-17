@@ -15,6 +15,7 @@ section {
 .btn {
   background-color: #f6c606;
   color: #252636;
+  border: 1px solid #252636;
 }
 .btn:hover {
   background-color: #252636;
@@ -28,6 +29,7 @@ section {
   border-radius: 50rem;
   padding: 0.375rem 0.75rem;
   transition: 0.4s;
+  border: 1px solid #252636;
 }
 .pagination a:hover {
   background-color: #252636;
@@ -36,6 +38,7 @@ section {
 .pagination .btn {
   cursor: not-allowed;
   opacity: 0.5;
+  border: 1px solid #252636;
 }
 .pagination .btn:hover {
   background-color: #f6c606;
@@ -168,6 +171,7 @@ header .search svg {
   background-color: #f6c606;
   color: #252636;
   transition: 0.4s;
+  border: 1px solid #252636;
   padding: 5px 10px;
   border-radius: 50rem;
   text-decoration: none;

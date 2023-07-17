@@ -140,7 +140,7 @@ function mytheme_comment($comment, $args, $depth) {
                         <?php 
                             _e( 'Your comment is awaiting moderation.' ); 
                         ?>
-                    </p><br/><?php 
+                    </p><br/><?php
                 }
             ?>
         </div>
@@ -149,19 +149,19 @@ function mytheme_comment($comment, $args, $depth) {
         </div>
         <div class="reply">
             <?php
-                comment_reply_link( 
-                    array_merge( 
-                        $args, 
-                        array( 
+                comment_reply_link(
+                    array_merge(
+                        $args,
+                        array(
                             'reply_text' => __('<i class="fa-solid fa-comments"></i> Reply'),
-                            'add_below' => $add_below, 
-                            'depth'     => $depth, 
-                            'max_depth' => $args['max_depth'] 
-                        ) 
-                    ) 
+                            'add_below' => $add_below,
+                            'depth'     => $depth,
+                            'max_depth' => $args['max_depth']
+                        )
+                    )
                 ); ?>
         </div>
-        <?php 
+        <?php
     if ( 'div' != $args['style'] ) :
     ?>
     </div>
