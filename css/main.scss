@@ -449,3 +449,18 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
 }
 
 /* End Request Section */
+/* Start About Section */
+.about {
+	.missions {
+		.card {
+			min-height: 520px;
+		}
+	}
+
+	.engagement {
+		background-image: url('../imgs/Sustain.png');
+		background-size: cover;
+	}
+}
+
+/* End About Section */

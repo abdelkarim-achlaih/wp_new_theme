@@ -365,4 +365,14 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
   background-color: #f6c606 !important;
 }
 
-/* End Request Section *//*# sourceMappingURL=main.css.map */
+/* End Request Section */
+/* Start About Section */
+.about .missions .card {
+  min-height: 520px;
+}
+.about .engagement {
+  background-image: url("../imgs/Sustain.png");
+  background-size: cover;
+}
+
+/* End About Section *//*# sourceMappingURL=main.css.map */
