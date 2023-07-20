@@ -7,7 +7,7 @@ $duration: 0.4s;
 /* End Variables */
 /* Start Global Rules */
 body {
-	font-family: "Ysabeau Office", sans-serif;
+	font-family: "Ysabeau Office", sans-serif !important;
 }
 
 section {
@@ -61,6 +61,12 @@ section {
 header {
 	background-color: $second;
 	min-width: 72px;
+
+	.navbar-brand {
+		img {
+			max-width: 70px;
+		}
+	}
 
 	.navbar-toggler {
 		border-color: white;
@@ -356,3 +362,90 @@ header {
 }
 
 /* End Comments Section */
+/* Start Request Section */
+.request {
+	h1 {
+		text-decoration: underline;
+		text-decoration-color: $main;
+
+		svg {
+			color: $main;
+		}
+	}
+
+}
+
+div.wpforms-container-full input[type=date],
+div.wpforms-container-full input[type=datetime],
+div.wpforms-container-full input[type=datetime-local],
+div.wpforms-container-full input[type=email],
+div.wpforms-container-full input[type=month],
+div.wpforms-container-full input[type=number],
+div.wpforms-container-full input[type=password],
+div.wpforms-container-full input[type=range],
+div.wpforms-container-full input[type=search],
+div.wpforms-container-full input[type=tel],
+div.wpforms-container-full input[type=text],
+div.wpforms-container-full input[type=time],
+div.wpforms-container-full input[type=url],
+div.wpforms-container-full input[type=week],
+div.wpforms-container-full select,
+div.wpforms-container-full textarea {
+	max-width: 100% !important;
+	display: block;
+	margin-right: 0 !important;
+	border: $second 1px solid !important;
+
+	&:focus {
+		border-color: $second 1px solid !important;
+		box-shadow: none !important;
+	}
+}
+
+div.wpforms-container-full select>option:not(.placeholder):checked,
+div.wpforms-container-full select>option:hover {
+	background-color: $main !important;
+}
+
+div.wpforms-container-full input[type=submit]:not(:hover):not(:active),
+div.wpforms-container-full button[type=submit]:not(:hover):not(:active),
+div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+	background-color: $main !important;
+	color: $second !important;
+	transition: $duration !important;
+	border: 1px solid $second !important;
+	padding: 5px 10px !important;
+	border-radius: 50rem !important;
+	text-decoration: none !important;
+}
+
+div.wpforms-container-full input[type=submit]:hover,
+div.wpforms-container-full input[type=submit]:active,
+div.wpforms-container-full button[type=submit]:hover,
+div.wpforms-container-full button[type=submit]:active,
+div.wpforms-container-full .wpforms-page-button:hover,
+div.wpforms-container-full .wpforms-page-button:active {
+	background: none !important;
+	background-color: $second !important;
+	color: $main !important;
+	border: 1px solid $second !important;
+}
+
+div.wpforms-container-full input[type=submit],
+div.wpforms-container-full button[type=submit],
+div.wpforms-container-full .wpforms-page-button {
+	background-color: $main !important;
+	padding: 5px 10px !important;
+}
+
+div.wpforms-container-full input[type=submit]:focus:after,
+div.wpforms-container-full button[type=submit]:focus:after,
+div.wpforms-container-full .wpforms-page-button:focus:after {
+	border-color: transparent !important;
+}
+
+.wpforms-confirmation-scroll {
+	background-color: $main !important;
+}
+
+/* End Request Section */
