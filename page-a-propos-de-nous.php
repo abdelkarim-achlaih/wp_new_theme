@@ -1,15 +1,20 @@
 <?php get_header(); ?>
-<section class="about">
-  <div class="about-img">
-    <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/about.jpg" alt="About" class="img-fluid">
-  </div>
-  <p class="brief">
-    Chez <span>Stara Immo Travaux de construction</span>, nous sommes fiers d'être votre partenaire de confiance
-    dans tous vos projets
-    de construction. Depuis notre création, notre entreprise s'est engagée à offrir des services de construction de
-    haute
-    qualité, innovants et durables pour nos clients.
-  </p>
+<section class="about p-0">
+  <section class="about-img p-0 d-flex justify-content-center align-items-center lh-lg">
+    <div class="container text-center text-lg-start ">
+      <h1 class="fs-1 fw-bold m-0 mb-5">Construisez Vos Rêves: Découvrez Notre Univers de Création et d'Excellence!
+      </h1>
+      <p class="fs-4 fw-bold">
+        Chez <span class="text-white">Stara Immo Travaux de construction</span>, nous sommes fiers d'être votre
+        partenaire de confiance
+        dans tous vos projets
+        de construction. Depuis notre création, notre entreprise s'est engagée à offrir des services de construction
+        de
+        haute
+        qualité, innovants et durables pour nos clients.
+      </p>
+    </div>
+  </section>
   <section class="histoire">
     <div class="container">
       <div class="row">
