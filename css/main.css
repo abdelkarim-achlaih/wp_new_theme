@@ -367,13 +367,10 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
 
 /* End Request Section */
 /* Start About Section */
-.about .about-img {
+.about .overlay {
   position: relative;
-  height: calc(100vh - 80px);
-  background-image: url(../imgs/about.jpg);
-  background-size: cover;
 }
-.about .about-img::before {
+.about .overlay::before {
   content: "";
   position: absolute;
   top: 0;
@@ -381,6 +378,11 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
   width: 100%;
   height: 100%;
   background-color: rgba(246, 198, 6, 0.9);
+}
+.about .about-img {
+  height: calc(100vh - 80px);
+  background-image: url(../imgs/about.jpg);
+  background-size: cover;
 }
 .about .about-img .container {
   position: relative;
@@ -398,18 +400,71 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
   width: 30%;
   background-color: white;
 }
-.about .about-img .missions .card {
-  min-height: 520px;
+.about .histoire span,
+.about .gerant span {
+  color: #f6c606;
+  font-style: italic;
+  text-decoration: underline;
 }
-.about .about-img .engagement {
+.about .main-title {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  margin-bottom: 25px;
+}
+.about .main-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6c606;
+  border-radius: 75% 50% 75% 75%;
+  z-index: -1;
+  border: 1px solid #252636;
+}
+.about .missions .card {
+  min-height: 520px;
+  transition: 0.4s;
+}
+.about .missions .card:hover {
+  transform: translateY(-10px);
+}
+.about .missions .card h5 {
+  font-weight: bold;
+  color: #f6c606;
+}
+.about .values {
+  background-color: #f6c606;
+}
+.about .values h5 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.about .engagement {
   background-image: url("../imgs/Sustain.png");
   background-size: cover;
 }
+.about .engagement .container {
+  position: relative;
+}
+.about .contact .title {
+  color: #f6c606;
+}
+.about .contact .title svg {
+  font-size: 70px;
+  transform: translateX(-8px);
+}
 
 @media (max-width: 991px) {
-  .about h1::after {
+  .about .about-img h1::after {
     left: 50% !important;
     transform: translateX(-50%);
+  }
+  .about .values img {
+    max-width: 86px;
   }
 }
 /* End About Section *//*# sourceMappingURL=main.css.map */

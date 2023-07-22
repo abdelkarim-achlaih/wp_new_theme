@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="about p-0">
-  <section class="about-img p-0 d-flex justify-content-center align-items-center lh-lg">
+  <section class="about-img overlay p-0 d-flex justify-content-center align-items-center lh-lg">
     <div class="container text-center text-lg-start ">
       <h1 class="fs-1 fw-bold m-0 mb-5">Construisez Vos Rêves: Découvrez Notre Univers de Création et d'Excellence!
       </h1>
@@ -15,11 +15,13 @@
       </p>
     </div>
   </section>
-  <section class="histoire">
+  <section class="histoire p-0 pt-5">
     <div class="container">
+      <div class="title-holder d-flex justify-content-center justify-content-lg-start">
+        <h1 class="main-title">Notre histoire</h1>
+      </div>
       <div class="row">
-        <div class="col-lg-6">
-          <h1>Notre histoire</h1>
+        <div class="col-lg-6 text-center text-lg-start fs-5">
           <p>
             Fondée récemment par <span>M. Mbarek Achlaih</span>, <span>Stara Immo</span> est
             une entreprise novatrice et passionnée
@@ -67,14 +69,21 @@
       </div>
     </div>
   </section>
-  <section class="histoire">
+  <section class="gerant p-0 pb-5">
     <div class="container">
       <div class="row">
+        <div class="col-lg-6"></div>
         <div class="col-lg-6">
+          <div class="title-holder d-flex justify-content-center justify-content-lg-start">
+            <h1 class="main-title">Notre gérant</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1">
           <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/boss.png" alt="boss" class="img-fluid">
         </div>
-        <div class="col-lg-6">
-          <h1>Notre gérant</h1>
+        <div class="col-lg-6 fs-5 text-center text-lg-start order-1 order-lg-2">
           <p>
             Le parcours de <span>M. Mbarek Achlaih</span> commence avec une longue carrière dans de grandes
             entreprises de construction, où il a
@@ -95,9 +104,94 @@
       </div>
     </div>
   </section>
+  <section class="values p-0">
+    <div class="container">
+      <div class="title-holder d-flex justify-content-center">
+        <h1 class="main-title">Nos valeurs</h1>
+      </div>
+      <div class="row text-center text-md-start">
+        <div class="col-lg-6 mb-3">
+          <div class="value">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-1.png" alt="Values" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                <h5>Intégrité</h5>
+                <p>L'intégrité est la pierre angulaire de notre entreprise. Nous nous engageons à adopter des
+                  pratiques commerciales
+                  éthiques, honnêtes et transparentes dans toutes nos interactions avec nos clients, nos partenaires
+                  et nos employés. Nous
+                  mettons un point d'honneur à respecter nos engagements et à agir de manière responsable, en
+                  veillant à ce que notre
+                  réputation soit fondée sur la confiance et la fiabilité.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="value">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-2.png" alt="Values" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                <h5>Excellence</h5>
+                <p>L'excellence est notre objectif ultime dans tout ce que nous entreprenons. Nous recherchons
+                  constamment les plus hauts
+                  standards de qualité dans la réalisation de chaque projet de construction. De la conception à
+                  l'exécution, nous nous
+                  efforçons de surpasser les attentes de nos clients en offrant des résultats exceptionnels, sans
+                  compromettre sur la
+                  qualité et l'attention aux détails.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="value">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-3.png" alt="Values" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                <h5>Innovation</h5>
+                <p>Nous croyons en la puissance de l'innovation pour relever les défis de l'industrie de la
+                  construction. Nous sommes
+                  ouverts au changement et à l'adoption de nouvelles technologies et de pratiques de pointe. Notre
+                  esprit innovant nous
+                  pousse à trouver des solutions créatives, efficaces et durables pour répondre aux besoins uniques
+                  de chaque projet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="value">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-4.png" alt="Values" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                <h5>Engagement envers la sécurité</h5>
+                <p>La sécurité est notre priorité absolue, tant pour nos employés que pour nos clients et les
+                  parties prenantes de nos
+                  projets. Nous créons un environnement de travail sécurisé en mettant en œuvre des mesures de
+                  sécurité strictes et en
+                  veillant à ce que nos équipes soient formées aux meilleures pratiques pour prévenir les accidents
+                  et les incidents.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="missions">
     <div class="container">
-      <h1>Nos missions</h1>
+      <div class="title-holder d-flex justify-content-center">
+        <h1 class="main-title">Nos missions</h1>
+      </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-3">
           <div class="card">
@@ -228,91 +322,13 @@
       </div>
     </div>
   </section>
-  <section class="values">
+
+  <section class="engagement overlay text-center">
     <div class="container">
-      <h1>Nos valeurs</h1>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="value">
-            <div class="row">
-              <div class="col-2">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-1.png" alt="Values" class="img-fluid">
-              </div>
-              <div class="col-10">
-                <h5>Intégrité</h5>
-                <p>L'intégrité est la pierre angulaire de notre entreprise. Nous nous engageons à adopter des
-                  pratiques commerciales
-                  éthiques, honnêtes et transparentes dans toutes nos interactions avec nos clients, nos partenaires
-                  et nos employés. Nous
-                  mettons un point d'honneur à respecter nos engagements et à agir de manière responsable, en
-                  veillant à ce que notre
-                  réputation soit fondée sur la confiance et la fiabilité.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="value">
-            <div class="row">
-              <div class="col-2">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-2.png" alt="Values" class="img-fluid">
-              </div>
-              <div class="col-10">
-                <h5>Excellence</h5>
-                <p>L'excellence est notre objectif ultime dans tout ce que nous entreprenons. Nous recherchons
-                  constamment les plus hauts
-                  standards de qualité dans la réalisation de chaque projet de construction. De la conception à
-                  l'exécution, nous nous
-                  efforçons de surpasser les attentes de nos clients en offrant des résultats exceptionnels, sans
-                  compromettre sur la
-                  qualité et l'attention aux détails.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="value">
-            <div class="row">
-              <div class="col-2">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-3.png" alt="Values" class="img-fluid">
-              </div>
-              <div class="col-10">
-                <h5>Innovation</h5>
-                <p>Nous croyons en la puissance de l'innovation pour relever les défis de l'industrie de la
-                  construction. Nous sommes
-                  ouverts au changement et à l'adoption de nouvelles technologies et de pratiques de pointe. Notre
-                  esprit innovant nous
-                  pousse à trouver des solutions créatives, efficaces et durables pour répondre aux besoins uniques
-                  de chaque projet.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="value">
-            <div class="row">
-              <div class="col-2">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Value-4.png" alt="Values" class="img-fluid">
-              </div>
-              <div class="col-10">
-                <h5>Engagement envers la sécurité</h5>
-                <p>La sécurité est notre priorité absolue, tant pour nos employés que pour nos clients et les
-                  parties prenantes de nos
-                  projets. Nous créons un environnement de travail sécurisé en mettant en œuvre des mesures de
-                  sécurité strictes et en
-                  veillant à ce que nos équipes soient formées aux meilleures pratiques pour prévenir les accidents
-                  et les incidents.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="engagement">
-    <div class="container">
-      <h1>Engagement envers la durabilité</h1>
-      <p>En tant que société de construction responsable, nous nous engageons à adopter des pratiques durables dans
+      <h1 class="fw-bold mb-5">Engagement envers la durabilité</h1>
+      <p class="fs-5">En tant que société de construction responsable, nous nous engageons à adopter des
+        pratiques
+        durables dans
         chacun de nos
         projets. Nous recherchons constamment des moyens d'améliorer notre empreinte environnementale et d'incorporer
         des
@@ -321,21 +337,32 @@
   </section>
   <section class="contact">
     <div class="container">
-      <p>
-        Nous sommes impatients de discuter de votre projet de construction et de vous proposer des solutions sur
-        mesure.
-        Pour en
-        savoir plus sur nos services ou pour obtenir un devis personnalisé, n'hésitez pas à nous contacter via notre
-        <a href="mailto:abdelkarima46@gmail.com">mail</a> ou
-        par <a href="tel:+212708130262">téléphone</a>, vous pouvez aussi <a href="page-demander-un-devis.php">demander
-          un devis gratuit</a>.
-      </p>
-      <p>
-        Merci de nous avoir choisis pour vos projets de construction. Nous sommes déterminés à faire de votre vision
-        une
-        réalité
-        solide et durable.
-      </p>
+      <div class="row">
+        <div class="col-lg-2 title text-center mb-3">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span class="fs-4 d-block">Contactez nous</span>
+        </div>
+        <div class="col-lg-10 fs-5 text-center text-lg-start">
+          <p>
+            Nous sommes impatients de discuter de votre projet de construction et de vous proposer des solutions sur
+            mesure.
+            Pour en
+            savoir plus sur nos services ou pour obtenir un devis personnalisé, n'hésitez pas à nous contacter via
+            notre
+            <a href="mailto:abdelkarima46@gmail.com">mail</a> ou
+            par <a href="tel:+212708130262">téléphone</a>, vous pouvez aussi <a
+              href="../demander-un-devis">demander
+              un devis</a> gratuit.
+          </p>
+          <p>
+            Merci de nous avoir choisis pour vos projets de construction. Nous sommes déterminés à faire de votre
+            vision
+            une
+            réalité
+            solide et durable.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </section>
