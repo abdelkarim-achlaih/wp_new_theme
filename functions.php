@@ -33,7 +33,8 @@ function add_custom_menus()
 {
     register_nav_menus(array(
         "Navigation Bar" => "In the Header",
-        "Footer Menu" => "In the Footer"
+        "Links Menu" => "In the Footer Section 1",
+        "Cats Menu" => "In the Footer Section 2"
     ));
 }
 
@@ -46,6 +47,28 @@ function nav_bar_menu()
             'container' => false,
             'depth' => 2,
             'walker' => new WP_Bootstrap_Navwalker()
+        )
+    );
+}
+function footer_section_1()
+{
+    wp_nav_menu(
+        array(
+            'theme_location' => "Links Menu",
+            'menu_class' => "navbar-nav ",
+            'container' => false,
+            'depth' => 2,
+        )
+    );
+}
+function footer_section_2()
+{
+    wp_nav_menu(
+        array(
+            'theme_location' => "Cats Menu",
+            'menu_class' => "navbar-nav ",
+            'container' => false,
+            'depth' => 2,
         )
     );
 }

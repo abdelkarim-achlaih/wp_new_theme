@@ -52,7 +52,7 @@ header {
   min-height: 80px;
 }
 header .navbar-brand img {
-  max-width: 70px;
+  max-width: 78px;
 }
 header .navbar-toggler {
   border-color: white;
@@ -467,4 +467,54 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
     max-width: 86px;
   }
 }
-/* End About Section *//*# sourceMappingURL=main.css.map */
+/* End About Section */
+/* Start Footer Section */
+footer {
+  background-color: #252636;
+}
+footer h2 {
+  font-size: 17px;
+}
+footer img {
+  max-width: 80px;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+footer ul li a:hover, footer ul li a:focus {
+  color: #f6c606 !important;
+}
+footer button a {
+  text-decoration: none;
+  color: #252636;
+}
+footer button a:hover {
+  color: #f6c606 !important;
+}
+footer .social a {
+  color: white;
+}
+footer .social a svg {
+  font-size: 25px;
+}
+footer .social a svg.facebook {
+  color: #1877f2;
+}
+footer .social a svg.twitter {
+  color: #1da1f2;
+}
+footer .social a svg.linkedin {
+  color: #0a66c2;
+}
+footer .social a svg.youtube {
+  color: #ff0000;
+}
+footer .social a svg:hover {
+  color: #f6c606 !important;
+}
+
+/* End Footer Section *//*# sourceMappingURL=main.css.map */

@@ -64,7 +64,7 @@ header {
 
 	.navbar-brand {
 		img {
-			max-width: 70px;
+			max-width: 78px;
 		}
 	}
 
@@ -587,3 +587,72 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
 }
 
 /* End About Section */
+/* Start Footer Section */
+footer {
+	background-color: $second;
+
+	h2 {
+		font-size: 17px;
+	}
+
+	img {
+		max-width: 80px;
+	}
+
+	ul {
+		li {
+			margin-bottom: 1rem;
+
+			a {
+				text-decoration: none;
+				color: rgba(255, 255, 255, .5) !important;
+
+				&:hover,
+				&:focus {
+					color: $main !important;
+				}
+			}
+		}
+	}
+
+	button a {
+		text-decoration: none;
+		color: $second;
+
+		&:hover {
+			color: $main !important;
+			;
+		}
+	}
+
+	.social a {
+		svg {
+			font-size: 25px;
+
+			&.facebook {
+				color: #1877f2;
+			}
+
+			&.twitter {
+				color: #1da1f2;
+			}
+
+			&.linkedin {
+				color: #0a66c2;
+			}
+
+			&.youtube {
+				color: #ff0000;
+			}
+
+			&:hover {
+				color: $main !important;
+			}
+		}
+
+		color: white;
+
+	}
+}
+
+/* End Footer Section */
