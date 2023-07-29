@@ -2,7 +2,7 @@
 <section class="request">
   <div class="container p-0">
     <h1 class="text-center mb-5"><i class="fa-solid fa-calculator me-3"></i>Demander Un Devis</h1>
-    <div class="row align-items-start">
+    <div class="row align-items-start ms-0 me-0">
       <div class="col-lg-6 form-holder ps-4 pe-4">
         <?php echo do_shortcode('[wpforms id="98"]');?>
       </div>
