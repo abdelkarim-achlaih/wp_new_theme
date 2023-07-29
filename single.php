@@ -22,7 +22,7 @@
                   </div>
                   <div class="blog-post-data d-flex justify-content-evenly mb-5">
                     <span><i class="fa-solid fa-clock"></i><?php the_time('F j, Y'); ?></span>
-                    <span><i class="fa-solid fa-comment"></i><?php comments_number(); ?></span>
+                    <span><i class="fa-solid fa-comment"></i><?php comments_number('0 commentaire', 'Un commentaire', '% commentaires'); ?></span>
                     <span class="post-category"><i class="fa-solid fa-tag"></i><?php the_category(', '); ?></span>
                   </div>
                   <div class="blog-post-content text-black-70 lh-lg ps-sm-5 pe-sm-5 fs-5">
@@ -36,34 +36,30 @@
         <div class="pagination pt-4 pb-5 d-flex justify-content-evenly">
           <?php
             if (get_previous_post_link()) {
-              previous_post_link('%link', '« Prev Article');
+              previous_post_link('%link', '« Article précédent');
             } else {
               ?>
-                <span class="btn rounded-pill">« Prev Article</span>
+                <span class="btn rounded-pill">« Article précédent</span>
               <?php
             }
             if (get_next_post_link()) {
-              next_post_link('%link', 'Next Article »');
+              next_post_link('%link', 'Prochain article »');
             } else {
               ?>
-                <span class="btn rounded-pill">Next Article »</span>
+                <span class="btn rounded-pill">Prochain article »</span>
               <?php
             }
           ?>
         </div>
         <div class="author mb-5 p-sm-5 pt-5 pb-5 text-center text-md-start">
-          <h3 class="fw-bold fs-3 mb-5">About the Author</h3>
+          <h3 class="fw-bold fs-3 mb-5">À propos de l'auteur</h3>
           <div class="row align-items-center">
             <div class="col-md-3 mb-3">
               <?php echo get_avatar(get_the_author_meta('ID'), 180) ?>
               <p class="author-stats row text-center fs-5 mt-3 lh-lg">
                 <span>
                   <i class="fa-solid fa-pen-to-square"></i>
-                  <?php echo count_user_posts(get_the_author_meta('ID'));?> Blogs
-                </span>
-                <span>
-                  <i class="fa-solid fa-user"></i>
-                  <?php the_author_posts_link();?>
+                  <?php echo count_user_posts(get_the_author_meta('ID'));?> articles
                 </span>
               </p>
             </div>
@@ -74,35 +70,34 @@
           </div>
         </div>
         <div class="comments p-sm-5">
-          <h3 class="fw-bold fs-3 text-center text-md-start">Comments</h3>
-          <p class="text-balck-75 text-center text-md-start"><?php comments_number() ?></p>
+          <h3 class="fw-bold fs-3 text-center text-md-start">Commentaires</h3>
+          <p class="text-balck-75 text-center text-md-start"><?php comments_number('0 commentaire', 'Un commentaire', '% commentaires') ?></p>
           <?php comments_template() ?>
         </div>
       </div>
       <div class="col-lg-3 ps-sm-0 pe-sm-0 ps-lg-3 pe-lg-3">
-        <div class="card mb-5 d-none d-lg-block">
-          <div class="card-header">
-            <h3 class="fw-bold">About the Author</h3>
-          </div>
-          <div class="card-body text-center">
-            <?php echo get_avatar($post, 180) ?>
-            <h5 class="card-title fw-bold mt-3"><?php the_author_meta('nickname');?></h5>
-            <p class="card-text text-center text-md-start"><?php the_author_meta('description'); ?></p>
-          </div>
-        </div>
         <div class="card">
           <div class="card-header">
-            <h3 class="fw-bold">More Articles</h3>
+            <h3 class="fw-bold">Autres Articles</h3>
           </div>
           <?php
-            if (have_posts()) {
-              while (have_posts()) {
-                the_post();
+            $categories = get_the_category(get_the_ID());
+            $args = array(
+              'category__in' => $categories[0]->term_id,
+              'post_type' => 'post',
+              'posts_per_page' => 5,
+              'orderby' => 'rand',
+              'post__not_in' => array(get_the_ID())
+            );
+            $query = new WP_Query($args);
+            if ($query->have_posts()) {
+              while ($query->have_posts()) {
+                $query->the_post();
                 ?>
                   <div class="card-body">
                     <h5 class="card-title fw-bold"><?php the_title(); ?></h5>
                     <p class="card-text"><?php the_excerpt(); ?></p>
-                    <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Read more</a>
+                    <a href="<?php the_permalink(); ?>" class="btn rounded-pill">Lire la suite</a>
                   </div>
                   <?php
                 }
