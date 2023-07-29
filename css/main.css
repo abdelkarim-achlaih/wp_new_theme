@@ -459,6 +459,11 @@ div.wpforms-container-full .wpforms-page-button:focus:after {
 }
 
 @media (max-width: 991px) {
+  .about .about-img {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    height: auto;
+  }
   .about .about-img h1::after {
     left: 50% !important;
     transform: translateX(-50%);

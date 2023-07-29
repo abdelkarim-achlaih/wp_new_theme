@@ -23,12 +23,12 @@
       <div class="row">
         <div class="col-lg-6 text-center text-lg-start fs-5">
           <p>
-            Fondée récemment par <span>M. Mbarek Achlaih</span>, <span>Stara Immo</span> est
+            Fondée récemment par <span>le gérant</span>, <span>Stara Immo</span> est
             une entreprise novatrice et passionnée
             qui voit le jour grâce à la vision et à la détermination de son fondateur. Animé par une passion
             profonde
             pour
-            l'industrie de la construction et fort d'une expérience solide, <span>M. Mbarek Achlaih</span> a décidé
+            l'industrie de la construction et fort d'une expérience solide, <span>le gérant</span> a décidé
             de
             relever le défi d'établir
             sa propre entreprise pour apporter une approche unique à l'univers de la construction.
@@ -39,14 +39,14 @@
             projet
             réussi a renforcé sa réputation en tant qu'entreprise dévouée à l'excellence et à la satisfaction du
             client. La
-            philosophie de <span>M. Mbarek Achlaih</span>, basée sur l'intégrité, la qualité et l'innovation,
+            philosophie du <span>gérant</span>, basée sur l'intégrité, la qualité et l'innovation,
             imprègne
             chaque aspect
             de
             l'entreprise et inspire notre équipe dédiée.
           </p>
           <p>
-            Notre société est le reflet de la vision et des valeurs de <span>M. Mbarek Achlaih</span>. Nous croyons
+            Notre société est le reflet de la vision et des valeurs du <span>gérant</span>. Nous croyons
             fermement que notre approche
             centrée sur le client, notre engagement envers la qualité et notre recherche constante d'innovation nous
             permettront de
@@ -85,7 +85,7 @@
         </div>
         <div class="col-lg-6 fs-5 text-center text-lg-start order-1 order-lg-2">
           <p>
-            Le parcours de <span>M. Mbarek Achlaih</span> commence avec une longue carrière dans de grandes
+            Le parcours du <span>gérant</span> commence avec une longue carrière dans de grandes
             entreprises de construction, où il a
             acquis une expertise variée dans la réalisation de projets complexes. Fort de son expérience, il a
             ressenti le besoin de
@@ -94,7 +94,7 @@
             client.
           </p>
           <p>
-            Avec une vision claire en tête, <span>M. Mbarek Achlaih</span> a travaillé sans relâche pour donner vie
+            Avec une vision claire en tête, <span>le gérant</span> a travaillé sans relâche pour donner vie
             à
             <span>Stara Immo</span>. Grâce à son expertise, son dévouement et son réseau de
             partenaires de confiance, il a réussi à établir
