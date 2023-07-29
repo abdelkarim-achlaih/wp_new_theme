@@ -4,7 +4,7 @@
     <h1 class="text-center mb-5"><i class="fa-solid fa-calculator me-3"></i>Demander Un Devis</h1>
     <div class="row align-items-start">
       <div class="col-lg-6 form-holder ps-4 pe-4">
-        <?php echo do_shortcode('[wpforms id="86"]');?>
+        <?php echo do_shortcode('[wpforms id="98"]');?>
       </div>
       <div class="col-lg-6">
         <div class="image-background d-none d-lg-block">

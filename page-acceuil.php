@@ -81,7 +81,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6 order-2 order-lg-1">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/boss.png" alt="boss" class="img-fluid">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/'?>imgs/Boss.png" alt="boss" class="img-fluid">
         </div>
         <div class="col-lg-6 fs-5 text-center text-lg-start order-1 order-lg-2">
           <p>
